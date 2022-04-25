@@ -1,2 +1,5 @@
-for post in posts
-  a(href=`posts/${post.id}`)= post.title
+extends ../../layout.pug
+
+block content
+  for post in posts
+    a(href=`posts/${post.id}`)= post.title

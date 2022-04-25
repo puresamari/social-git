@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "ts-node ./app/index.ts",
-    "debug": "nodemon --watch 'app/**/*' --watch 'data/**/*' -e json,ts,pug,css ./app/index.ts"
+    "debug": "nodemon --watch 'app/**/*' --watch 'data/**/*' -e json,ts,js,pug,css ./app/index.ts"
   },
   "repository": {
     "type": "git",

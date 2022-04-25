@@ -1,11 +1,11 @@
 import path from 'path';
 import fs from 'fs';
 
-import { postsDir } from './config';
-import { BuildPost, CollectPostData } from './screens/post';
+import { distDir, postsDir } from './config';
+import { BuildPages as BuildPostPages, CollectPostData } from './screens/post';
 import { BuildLanding } from './screens/landing';
 
-const postIds = fs.readdirSync(postsDir).map(CollectPostData);
+const posts = fs.readdirSync(postsDir).map(CollectPostData);
 
-postIds.forEach(post => BuildPost(post));
-BuildLanding(postIds.slice(0, 9));
+BuildPostPages(posts);
+BuildLanding(posts.slice(0, 9));
