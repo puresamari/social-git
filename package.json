@@ -1,0 +1,30 @@
+{
+  "name": "social-git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ts-node ./app/index.ts",
+    "debug": "nodemon --watch 'app/**/*' --watch 'data/**/*' -e json,ts,pug,css ./app/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puresamari/social-git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puresamari/social-git/issues"
+  },
+  "homepage": "https://github.com/puresamari/social-git#readme",
+  "devDependencies": {
+    "@types/pug": "^2.0.6",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2",
+    "ts-node": "^10.7.0"
+  },
+  "dependencies": {
+    "typescript": "^4.6.3"
+  }
+}
